@@ -1,5 +1,3 @@
-# IRIS-mychild
-
 graph TD
     %% Nodes
     User[fa:fa-user User Ayah/Bunda]
