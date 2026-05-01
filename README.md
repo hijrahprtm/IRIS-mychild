@@ -9,8 +9,6 @@
 
 **I.R.I.S** is an autonomous **Agentic AI** designed to revolutionize parent-child communication. By leveraging state-of-the-art **Large Language Models (LLMs)** and **Voice Synthesis**, I.R.I.S acts as a personalized bridge between family members, delivering affectionate, context-aware responses and automated **Voice Notes (VN)** via WhatsApp.
 
-![I.R.I.S Workflow](watermarked_img_5070114616622580120.png)
-
 ## 🚀 Technical Core & Toolstack
 
 This project utilizes a high-performance stack to ensure low-latency response generation and reliable delivery:
