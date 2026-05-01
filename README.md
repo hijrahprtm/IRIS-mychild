@@ -1,20 +1,25 @@
 # IRIS-mychild
 
-graph LR
-    subgraph "WhatsApp Interface"
-        A[fa:fa-whatsapp User: Ayah/Bunda] -- "Ketik 'iris' / Chat Rutin" --> B
-    end
+graph TD
+    %% Nodes
+    User[fa:fa-user User Ayah/Bunda]
+    WhatsApp[fa:fa-whatsapp WhatsApp App]
+    HF[fa:fa-server Hugging Face Space]
+    Gemini[fa:fa-brain Google Gemini AI]
+    TTS[fa:fa-microphone Google TTS]
+    Whapi[fa:fa-bolt Whapi.cloud Gateway]
 
-    subgraph "Cloud Backend (Hugging Face)"
-        B[fa:fa-server FastAPI Webhook] --> C{fa:fa-brain AI Logic}
-        C -- "Context Processing" --> D[fa:fa-robot Gemini 1.5 Flash]
-        D -- "Text Response" --> E[fa:fa-comment-dots Text-to-Speech]
-        E -- "Generate Audio" --> F[fa:fa-microphone Google TTS API]
-    end
+    %% Alur Kerja
+    User -- "Kirim chat 'iris'" --> WhatsApp
+    WhatsApp -- "Webhook Trigger" --> HF
+    HF -- "Generate Respon Manja" --> Gemini
+    Gemini -- "Text to Audio" --> TTS
+    TTS -- "Audio Stream" --> Whapi
+    Whapi -- "Kirim Voice Note" --> WhatsApp
+    WhatsApp -- "Diterima Bunda" --> User
 
-    subgraph "Gateway & Delivery"
-        F --> G[fa:fa-bolt Whapi.cloud API]
-        G -- "Send Voice Note" --> H[fa:fa-volume-up WhatsApp VN]
-    end
-
-    H --> A
+    %% Styling
+    style User fill:#f9f,stroke:#333,stroke-width:2px
+    style Gemini fill:#4285F4,stroke:#fff,color:#fff
+    style HF fill:#FFD21E,stroke:#333
+    style WhatsApp fill:#25D366,stroke:#fff,color:#fff
