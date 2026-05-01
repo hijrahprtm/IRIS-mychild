@@ -1,23 +1,36 @@
-graph TD
-    %% Nodes
-    User[fa:fa-user User Ayah/Bunda]
-    WhatsApp[fa:fa-whatsapp WhatsApp App]
-    HF[fa:fa-server Hugging Face Space]
-    Gemini[fa:fa-brain Google Gemini AI]
-    TTS[fa:fa-microphone Google TTS]
-    Whapi[fa:fa-bolt Whapi.cloud Gateway]
+# 🤖 I.R.I.S: Agentic AI Voice Assistant
+**I.R.I.S** is an autonomous **Agentic AI** designed to revolutionize parent-child communication. By leveraging state-of-the-art **Large Language Models (LLMs)** and **Voice Synthesis**, I.R.I.S acts as a personalized bridge between family members, delivering affectionate, context-aware responses and automated **Voice Notes (VN)** via WhatsApp.
 
-    %% Alur Kerja
-    User -- "Kirim chat 'iris'" --> WhatsApp
-    WhatsApp -- "Webhook Trigger" --> HF
-    HF -- "Generate Respon Manja" --> Gemini
-    Gemini -- "Text to Audio" --> TTS
-    TTS -- "Audio Stream" --> Whapi
-    Whapi -- "Kirim Voice Note" --> WhatsApp
-    WhatsApp -- "Diterima Bunda" --> User
+<img width="1380" height="752" alt="Gemini_Generated_Image_dpjbrvdpjbrvdpjb" src="https://github.com/user-attachments/assets/f8ab91bb-4747-4cf9-8a33-229f88734952" />
 
-    %% Styling
-    style User fill:#f9f,stroke:#333,stroke-width:2px
-    style Gemini fill:#4285F4,stroke:#fff,color:#fff
-    style HF fill:#FFD21E,stroke:#333
-    style WhatsApp fill:#25D366,stroke:#fff,color:#fff
+---
+
+# 🤖 I.R.I.S: Agentic AI Voice Assistant
+
+**I.R.I.S** is an autonomous **Agentic AI** designed to revolutionize parent-child communication. By leveraging state-of-the-art **Large Language Models (LLMs)** and **Voice Synthesis**, I.R.I.S acts as a personalized bridge between family members, delivering affectionate, context-aware responses and automated **Voice Notes (VN)** via WhatsApp.
+
+![I.R.I.S Workflow](watermarked_img_5070114616622580120.png)
+
+## 🚀 Technical Core & Toolstack
+
+This project utilizes a high-performance stack to ensure low-latency response generation and reliable delivery:
+
+*   **LLM Engine**: **Gemini 1.5 Flash** for ultra-fast, "manja" (affectionate) personality mapping and intent recognition.
+*   **Backend Framework**: **FastAPI** for an asynchronous, high-concurrency **Webhook** architecture.
+*   **Communication Gateway**: **Whapi.cloud API** to interface with WhatsApp for sending **Voice Notes (VN)** and text.
+*   **Voice Synthesis**: **Google Text-to-Speech (TTS)** API for converting AI text into high-fidelity Indonesian audio.
+*   **Deployment**: Hosted on **Hugging Face Spaces** for 24/7 autonomous operation.
+*   **Automation**: **Asyncio-based Scheduler** for routine "check-in" messages and autonomous engagement.
+
+## 🛠️ Key Features
+
+*   **Agentic Autonomy**: Not just a chatbot—I.R.I.S proactively initiates conversations based on time-blocks (Morning/Afternoon/Evening).
+*   **Voice-First Interface**: Converts text responses into **WhatsApp Voice Notes** automatically for a more personal touch.
+*   **Contextual Memory**: Built with specific "Soul" instructions to maintain a consistent persona (Jakarta-slang, affectionate, and caring).
+*   **Smart Scheduling**: Intelligent message throttling (37 messages/block) to maintain natural engagement patterns.
+
+## 📂 Project Structure
+```bash
+├── app.py              # Main FastAPI application & Agent logic
+├── requirements.txt    # Project dependencies (FastAPI, Google-GenAI, etc.)
+└── README.md           # Project documentation
