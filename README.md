@@ -1,6 +1,5 @@
 # 🤖 I.R.I.S: Agentic AI Voice Assistant
-**I.R.I.S** is an autonomous **Agentic AI** designed to revolutionize parent-child communication. By leveraging state-of-the-art **Large Language Models (LLMs)** and **Voice Synthesis**, I.R.I.S acts as a personalized bridge between family members, delivering affectionate, context-aware responses and automated **Voice Notes (VN)** via WhatsApp.
-
+HuggingFace : https://huggingface.co/spaces/alexntssa/IRIS/tree/main
 <img width="1380" height="752" alt="Gemini_Generated_Image_dpjbrvdpjbrvdpjb" src="https://github.com/user-attachments/assets/f8ab91bb-4747-4cf9-8a33-229f88734952" />
 
 ---
