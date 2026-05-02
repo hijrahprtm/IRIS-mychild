@@ -1,6 +1,7 @@
 # 🤖 I.R.I.S: Agentic AI Voice Assistant
 HuggingFace : https://huggingface.co/spaces/alexntssa/IRIS/tree/main
-<img width="1380" height="752" alt="Gemini_Generated_Image_dpjbrvdpjbrvdpjb" src="https://github.com/user-attachments/assets/f8ab91bb-4747-4cf9-8a33-229f88734952" />
+
+<img width="1380" height="660" alt="586520806-f8ab91bb-4747-4cf9-8a33-229f88734952" src="https://github.com/user-attachments/assets/7cc82675-59bb-4a86-a210-84773485e0fa" />
 
 ---
 
